@@ -1,0 +1,8 @@
+type Query {
+    health: String!
+}
+
+type Mutation {
+    # Base mutation - can be empty
+    _empty: String
+}

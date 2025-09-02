@@ -1,0 +1,14 @@
+extend type Mutation {
+    createGroup(input: GroupInput!): GroupDto!
+}
+
+input GroupInput {
+    groupName: String!
+    groupDescription: String!
+}
+type GroupDto{
+    groupId: String!
+    groupName: String!
+    description: String!
+    active: Boolean!
+}

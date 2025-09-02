@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Cash-SPlit
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/mustang
+    username: cashsplit
+    password: cashsplit
+  graphql:
+    graphiql:
+      enabled: true
+

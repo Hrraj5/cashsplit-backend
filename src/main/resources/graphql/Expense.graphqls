@@ -1,0 +1,12 @@
+extend type Mutation {
+    createExpense(input : ExpenseInput): String
+}
+
+input ExpenseInput{
+    groupId: String
+    description: String
+    totalAmount:String
+    paidBy:String
+    category: String
+    userIds: [ID!]!
+}

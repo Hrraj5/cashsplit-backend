@@ -4,11 +4,13 @@ extend type Mutation {
 
 input GroupInput {
     groupName: String!
-    groupDescription: String!
+    groupDescription: String
+    groupType: String
 }
 type GroupDto{
     groupId: String!
     groupName: String!
-    description: String!
-    active: Boolean!
+    description: String
+    groupType: String
+    active: Boolean
 }

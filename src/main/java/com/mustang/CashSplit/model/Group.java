@@ -1,5 +1,6 @@
 package com.mustang.CashSplit.model;
 
+import com.mustang.CashSplit.model.enums.GroupType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,14 +22,22 @@ public class Group implements Persistable<String> {
     @Id
     @Column("id")
     private String groupId;
+
     @Column("group_name")
     private String groupName;
+
     @Column("description")
     private String description;
+
     @Column("is_active")
     private boolean active;
+
+    @Column("group_type")
+    private GroupType groupType;
+
     @Column("created_at")
     private Instant createdAt;
+
     @Column("updated_at")
     private Instant updatedAt;
 

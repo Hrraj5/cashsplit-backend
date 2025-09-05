@@ -21,14 +21,19 @@ public class User implements Persistable<String> {
     @Id
     @Column("id")
     private String userId;
+
     @Column("username")
     private String userName;
+
     @Column("name")
     private String name;
+
     @Column("phone_number")
     private String phoneNumber;
+
     @Column("created_at")
     private Instant createdAt;
+
     @Column("updated_at")
     private Instant updatedAt;
 

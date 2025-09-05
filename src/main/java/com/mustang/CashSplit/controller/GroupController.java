@@ -3,6 +3,7 @@ package com.mustang.CashSplit.controller;
 import com.mustang.CashSplit.dto.GroupDto;
 import com.mustang.CashSplit.input.GroupInput;
 import com.mustang.CashSplit.model.Group;
+import com.mustang.CashSplit.model.enums.GroupType;
 import com.mustang.CashSplit.service.GroupService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.graphql.data.method.annotation.Argument;
@@ -24,6 +25,7 @@ public class GroupController {
                 groupId(UUID.randomUUID().toString()).
                 groupName(groupInput.groupName()).
                 description(groupInput.groupDescription()).
+                groupType(GroupType.valueOf(groupInput.groupType())).
                 active(true).
                 isNew(true).
                 build();
